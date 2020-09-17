@@ -6,10 +6,36 @@ namespace ToLower
     {
         static void Main(string[] args)
         {
-            /*A program asks the user to write a word in Uppercase and displays this input in lowercase*/
-            Console.WriteLine("Enter an uppercase word: ");
-            double userInput = Console.ReadLine().ToUpper();
-            Console.WriteLine(userInput);            
+            Console.WriteLine("Choose a word");
+            string word = Console.ReadLine().ToLower();
+            switch (word)
+            {
+                case "sunday":
+                  Console.WriteLine("A");
+                    break;
+                case "monday":
+                    Console.WriteLine("B");
+                    break;
+                case "tuesday":
+                    Console.WriteLine("C");
+                    break;
+                case "wednesday":
+                    Console.WriteLine("D");
+                    break;
+                case "thursday":
+                    Console.WriteLine("E");
+                    break;
+                case "friday":
+                    Console.WriteLine("F");
+                    break;
+                case "saturday":
+                    Console.WriteLine("G");
+                    break;
+                
+                    
+                    
+
+            }
         }
     }
 }

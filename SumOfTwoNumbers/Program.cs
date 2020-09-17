@@ -1,21 +1,36 @@
 ﻿using System;
+using System.Security.Cryptography.X509Certificates;
 
 namespace SumOfTwoNumbers
 {
-    class Program
+    public static int Sum(int num1, int num2)
     {
-        static void Main(string[] args)
-        {
-            /*The program asks the user to enter two numbers and prints out the sum of these numbers*/
-            Console.WriteLine("Enter your first number: ");
-            Console.WriteLine("Enter your second number: ");
-            int num1 = Console.ReadLine();
-            string num2 = Int32.Parse(Console.ReadLine());
+        int total;
+        total = num1 + num2;
+        return total;
+    }
 
-            int result = num1 * num2;
-
-            Console.WriteLine($"{num1} + {num2} = {result}");
-
-        }
+    public static void Main()
+    {
+        Console.Write("\Function to calculate the sum of two numbers :\n");
+        Console.Write("--------------------------------------------------\n");
+        Console.Write("Enter a number: ");
+        int n1 = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Enter another number: ");
+        int n2 = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("\nThe sum of two numbers is : {0} \n", Sum(n1, n2));
     }
 }
+
+
+
+
+                
+
+            
+
+
+
+
+
+      }
